@@ -63,7 +63,7 @@ var jsPsychCanvasButtonResponse = (function (jspsych) {
           spin_num: {
               type: jspsych.ParameterType.INT,
               pretty_name: "Score",
-              default: 1,
+              default: 5,
           },
       },
   };
@@ -85,7 +85,7 @@ var jsPsychCanvasButtonResponse = (function (jspsych) {
               '<div class="score-board">' +
                 '<div class="score-board-title">Total Score</div>' +
                 '<div class="score-board-score" id="score" >' + trial.score + '</div>' +
-                '<div class="score-board-spins" id="spin-num">(Spin ' + trial.spin_num + ' / 5)</div>' +
+                '<div class="score-board-spins" id="spin-num">('+ trial.spin_num + ' spins remaining)</div>' +
               '</div>' +
               '<div id="jspsych-canvas-button-response-stimulus">' +
                 '<canvas id="jspsych-canvas-stimulus" height="' +
