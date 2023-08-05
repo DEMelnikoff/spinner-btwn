@@ -193,7 +193,7 @@ const createSpinner = function(canvas, spinnerData, score, sectors) {
     score += points;
     spinnerData.score = score;
     spin_num--;
-    let s == 's';
+    let s = 's';
     spin_num == 1 ? s == '' : s == 's';
     scoreMsg.innerHTML = `<span style="color:${color}; font-weight: bolder">${score}</span>`;
     spinNumMsg.innerHTML = `(${spin_num} spin${s} remaining)`;
