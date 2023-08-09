@@ -195,7 +195,8 @@ const createSpinner = function(canvas, spinnerData, score, sectors) {
     spin_num--;
     let s = 's';
     spin_num == 1 ? s == '' : s == 's';
-    scoreMsg.innerHTML = `<span style="color:${color}; font-weight: bolder">${score}</span>`;
+    //scoreMsg.innerHTML = `<span style="color:${color}; font-weight: bolder">${score}</span>`;
+    scoreMsg.innerHTML = `<span style="font-weight: bold">${score}</span>`;
     spinNumMsg.innerHTML = `(${spin_num} spin${s} remaining)`;
     setTimeout(() => {
       scoreMsg.innerHTML = `${score}`
@@ -287,13 +288,16 @@ const createSpinner = function(canvas, spinnerData, score, sectors) {
       ctx.textAlign = "center";
       ctx.fillStyle = "#fff";
       if (isSpinning && i == sector) {
-        ctx.font = "bolder 50px sans-serif"
+        ctx.font = "bolder 65px sans-serif"
         ctx.strokeStyle = 'black';
-        ctx.lineWidth = 8;
+        ctx.lineWidth = 3;
         ctx.strokeText(sectors[i].label, 0, -140);
         ctx.fillText(sectors[i].label, 0, -140);
       } else {
         ctx.font = "bold 50px sans-serif"
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = 3;
+        ctx.strokeText(sectors[i].label, 0, -140);
         ctx.fillText(sectors[i].label, 0, -140);
       }
      // ctx.fillText(sector.label, rad - 80, 10);
