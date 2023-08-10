@@ -11,7 +11,7 @@ const jsPsych = initJsPsych({
                 </div>`;
             setTimeout(() => { 
                 location.href = `https://app.prolific.co/submissions/complete?cc=${completionCode}`
-            }, 2000);
+            }, 1000);
         }
     },
 });
