@@ -266,7 +266,7 @@ const exp = (function() {
         type: jsPsychSurveyLikert,
         questions: [
             {prompt: `During the last round of Spin the Wheel,<br>to what extent did you feel immersed and engaged in what you were doing?`,
-            name: `dv`,
+            name: `dv_value`,
             labels: ['0<br>A little', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10<br>Extremely']},
         ],
         randomize_question_order: false,
@@ -287,7 +287,7 @@ const exp = (function() {
         type: jsPsychSurveyLikert,
         questions: [
             {prompt: `How happy are you right now?`,
-            name: `dv`,
+            name: `dv_value`,
             labels: ['0<br>Very unhappy', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10<br>Very happy']},
         ],
         randomize_question_order: false,
